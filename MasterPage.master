@@ -1,0 +1,61 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+            <link rel="stylesheet" type="text/css" href="style.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="header">
+                <asp:Image class="hdr_img" ID="Image1" runat="server" ImageUrl="~/image/flower2.jpg" />
+                MOST ROMANTIC<br />
+                Movies
+                 </div>
+            <div id="subheader">         
+                <h2 >Only Romantic Left Behind</h2>
+                <p >
+                    <asp:Label ID="CurrentTime" runat="server"></asp:Label>
+                </p>
+
+
+
+  </div>
+            <div id="menu">
+
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
+                   <LevelMenuItemStyles>
+                       <asp:MenuItemStyle CssClass="level1" />
+                       <asp:MenuItemStyle CssClass="level2" />
+                       <asp:MenuItemStyle CssClass="level3" />
+
+                   </LevelMenuItemStyles>
+                    
+
+                </asp:Menu>
+               
+               
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" showstartingnode="false"/>
+               
+               
+            </div>
+        
+    <div id="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id="footer">
+            Min Yang
+        </div>
+
+</div>
+    </form>
+</body>
+</html>

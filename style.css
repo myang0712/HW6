@@ -1,0 +1,175 @@
+﻿body {    text-align: left;
+}
+
+#container {
+    background: white;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px rgb(227, 227, 227);
+    width: 900px;
+}
+
+#header {
+    background: #f5f5f5;
+    color: pink;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px rgb(227, 227, 227);
+    font-family: Raleway, sans-serif; 
+    font-size: 60px; 
+    font-weight: normal;
+    padding-top: 10px;
+    text-transform: uppercase; 
+    font-style: normal; font-variant: normal; 
+}
+
+.hdr_img {
+    float: right;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#subheader {
+    font-family: Verdana, Arial,helvetica,sans-serif;
+    color: pink;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px rgb(227, 227, 227);
+}
+
+
+
+#main {
+    background: #F5F5F5;
+    padding: 10px;
+    margin: 0 auto;
+    border-left: 1px rgb(227, 227, 227);
+    border-right:1px rgb(227, 227, 227);
+    text-align:center;
+}
+
+#footer {
+    background: white;
+    font-size:12px;
+    color: pink;
+    padding: 1px;
+    margin: 0 auto;
+    text-align:center;
+    border: 1px rgb(227, 227, 227);
+}
+
+#menu {
+    background: #FFE4E1;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border-left: 1px rgb(227, 227, 227);
+    border-right:1px rgb(227, 227, 227);
+}
+
+#Level1 {
+    background: #FFE4E1;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border-left: 1px rgb(227, 227, 227);
+    border-right:1px rgb(227, 227, 227);
+}
+
+#level2 {
+    background: #FFE4E1;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border-left: 1px rgb(227, 227, 227);
+    border-right:1px rgb(227, 227, 227);
+}
+
+
+
+
+
+#lsidebar { background:#f5f5f5; float:left; width:300px; padding:10px; }
+
+#rsidebar { background:#f5f5f5; float:right; width:350px; padding:10px; }
+
+#homepage {
+           margin-bottom: 10px; 
+           padding: 0px; 
+           border: 0px; 
+            border-style: initial; 
+            font-weight: 500; 
+            font-style: normal; 
+            font-size: 40px; 
+            line-height: 40px; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            color: rgb(227, 227, 227);
+            text-align: left;
+            background-color: white; }
+
+#word {
+    font-family: Verdana, Arial,helvetica,sans-serif;
+    color: #808080;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px rgb(227, 227, 227);
+    text-align: center;
+}
+
+
+a:link {color:#696969;
+    text-decoration:none;
+    text-align:center; 
+}
+
+.cssdetailsview {
+    color: grey;
+    margin: 5px 0 10px 0;
+    border-collapse: collapse;
+}
+
+ .cssdetailsview td {
+     color:#808080;
+     padding: 10px;
+     border: solid 1px pink;
+     text-align: left;
+}
+
+ .cssdetailsview .fieldHeader {
+     background:white;
+     color:pink;
+     border:solid 1px pink;
+}
+
+.cssDetailsview .header td {
+    background:rgb(227, 227, 227);
+    border:solid 1px pink;
+}
+
+
+
+
+.cssGridview {    
+     color:#808080;
+     padding: 10px;
+     border: solid 1px pink;
+     text-align: left;
+}
+
+.cssGridview td {
+     color:pink;
+     padding: 10px;
+     border: solid 1px Pink;
+     text-align: left;
+}
+
+ .cssdetailsview .fieldHeader {
+     background:white;
+     color:pink;
+     border:solid 1px pink;
+}
+
+.cssDetailsview .header td {
+    background:rgb(227, 227, 227);
+    border:solid 1px pink;
