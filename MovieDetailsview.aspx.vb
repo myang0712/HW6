@@ -9,7 +9,7 @@ Partial Class CitiesDetailsview
     End Sub
 
     Protected Sub DetailsView1_ItemUpdated(sender As Object, e As DetailsViewUpdatedEventArgs) Handles DetailsView1.ItemUpdated
-        Response.Redirect("./MovieGrideview.aspx")
+        Response.Redirect("./MovieGridview.aspx")
     End Sub
 
     Protected Sub DetailsView1_PageIndexChanging(sender As Object, e As DetailsViewPageEventArgs) Handles DetailsView1.PageIndexChanging

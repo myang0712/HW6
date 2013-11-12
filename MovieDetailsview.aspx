@@ -3,7 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Table] WHERE ([MovieId] = @MovieId)" DeleteCommand="DELETE FROM [Table] WHERE [MovieId] = @MovieId" InsertCommand="INSERT INTO [Table] ([MovieName], [Year], [actor1], [actor2], [actor3], [actor4], [actor5], [RomanticReason]) VALUES (@MovieName, @Year, @actor1, @actor2, @actor3, @actor4, @actor5, @RomanticReason)" UpdateCommand="UPDATE [Table] SET [MovieName] = @MovieName, [Year] = @Year, [actor1] = @actor1, [actor2] = @actor2, [actor3] = @actor3, [actor4] = @actor4, [actor5] = @actor5, [RomanticReason] = @RomanticReason WHERE [MovieId] = @MovieId">
+     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+         SelectCommand="SELECT * FROM [Table] WHERE ([MovieId] = @MovieId)" 
+         DeleteCommand="DELETE FROM [Table] WHERE [MovieId] = @MovieId" 
+         InsertCommand="INSERT INTO [Table] ([MovieName], [Year], [actor1], [actor2], [actor3], [actor4], [actor5], [RomanticReason]) VALUES (@MovieName, @Year, @actor1, @actor2, @actor3, @actor4, @actor5, @RomanticReason)" 
+         UpdateCommand="UPDATE [Table] SET [MovieName] = @MovieName, [Year] = @Year, [actor1] = @actor1, [actor2] = @actor2, [actor3] = @actor3, [actor4] = @actor4, [actor5] = @actor5, [RomanticReason] = @RomanticReason WHERE [MovieId] = @MovieId">
          <DeleteParameters>
              <asp:Parameter Name="MovieId" Type="Int32" />
          </DeleteParameters>
@@ -17,9 +21,9 @@
              <asp:Parameter Name="actor5" Type="String" />
              <asp:Parameter Name="RomanticReason" Type="String" />
          </InsertParameters>
-    <SelectParameters>
-        <asp:QueryStringParameter Name="MovieId" QueryStringField="MovieId" Type="Int32" />
-    </SelectParameters>
+         <SelectParameters>
+             <asp:QueryStringParameter Name="MovieId" QueryStringField="MovieId" Type="Int32" />
+         </SelectParameters>
          <UpdateParameters>
              <asp:Parameter Name="MovieName" Type="String" />
              <asp:Parameter Name="Year" Type="String" />
@@ -53,6 +57,7 @@
 
 <FieldHeaderStyle CssClass="fieldHeader"></FieldHeaderStyle>
             <Fields>
+                <asp:BoundField DataField="MovieId" HeaderText="MovieId" SortExpression="MovieId" InsertVisible="False" ReadOnly="True" />
                 <asp:BoundField DataField="MovieName" HeaderText="MovieName" SortExpression="MovieName" />
                 <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
                 <asp:BoundField DataField="actor1" HeaderText="actor1" SortExpression="actor1" />
